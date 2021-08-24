@@ -11,7 +11,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <header className="App-header">{JSON.stringify(data, null, 2)}</header>
+      <header className="App-header">
+        <pre>{JSON.stringify(data, null, 2)}</pre>
+      </header>
     </div>
   );
 }

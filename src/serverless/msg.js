@@ -14,7 +14,7 @@ exports.handler = async event => {
     const data = await req();
     return {
       statusCode: 200,
-      body: JSON.stringify({ data }),
+      body: JSON.stringify({ msg: "Hello, World" }),
     };
   } catch (error) {
     return { statusCode: 500, body: JSON.stringify({ error }) };
