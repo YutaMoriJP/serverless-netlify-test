@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  const [data, setData] = useState("");
+  const [data, setData] = useState("loading...");
   useEffect(() => {
     fetch("/.netlify/functions/msg")
       .then(res => res.json())
