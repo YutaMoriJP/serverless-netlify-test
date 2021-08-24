@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
+  //just testing netlify functions
   const [data, setData] = useState("loading...");
   useEffect(() => {
     fetch("/.netlify/functions/msg")
