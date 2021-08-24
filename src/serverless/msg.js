@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const req = async () => {
-  const res = await axios("https://jsonplaceholder.typicode.com/users/1", {
+  const res = await axios(process.env.APIURL, {
     method: "GET",
   });
   return res.data;
