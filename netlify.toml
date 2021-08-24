@@ -1,0 +1,7 @@
+[build]
+
+  command = "npm run build"
+
+  functions = "src/serverless"
+
+  publish = "build"
